@@ -5,3 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+require "faker"
+
+1000.times do
+    name = Faker::Coffee.blend_name #=> "Summer Solstice"
+    coffees = cofees.new(
+        name: name
+    )
+end
+
