@@ -19,6 +19,9 @@
 //= require popper
 //= require bootstrap-sprockets
 
+
+
+
 $(document).ready(function(){
     console.log('Hello');
 })

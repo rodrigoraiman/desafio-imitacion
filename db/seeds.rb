@@ -7,10 +7,13 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 require "faker"
 
+Coffeesale.destroy_all
+
 1000.times do
-    name = Faker::Coffee.blend_name #=> "Summer Solstice"
-    coffees = cofees.new(
-        name: name
+    Coffeesale.create(
+        blend_name:Faker::Coffee.blend_name,
+        origin:Faker::Coffee.origin, 
+        price:rand(1000..6000),
+        date_time: Faker::Date.between(from:'2014-09-23',to: Date.today)
     )
 end
-
